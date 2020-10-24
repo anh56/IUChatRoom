@@ -45,8 +45,11 @@ spring:
       indent-output: true
   data:
     mongodb:
-      uri: mongodb://localhost:27017/?waitQueueMultiple=1000
-      database: IUCR
+      #local mongodb
+      #      uri: mongodb://localhost:27017/?waitQueueMultiple=1000
+      #cloud mongodb
+      uri: mongodb+srv://iucradmin:iucradmin@iucr-dbcluster-1.k59ov.mongodb.net/chatroom?retryWrites=true&w=majority
+      database: chatroom
   mail:
     host: localhost
     port: 25
